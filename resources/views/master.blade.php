@@ -20,6 +20,21 @@
     @yield('content')
     {{ View::make('footer') }}
 </body>
+<style>
+    .slider-div {
+        height: 100vh;
+    }
+
+    img.slider-img {
+        height: 400px;
+        /* object-fit: cover; */
+    }
+
+    .slider-text {
+        background: #87ceebc7;
+        border-radius: 10px
+    }
+</style>
 {{-- <script>
     $(document).ready(function() {
         $('.btn').click((
