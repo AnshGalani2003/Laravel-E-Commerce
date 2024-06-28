@@ -21,9 +21,9 @@
     {{ View::make('footer') }}
 </body>
 <style>
-    .slider-div {
+    /* .slider-div {
         height: 100vh;
-    }
+    } */
 
     img.slider-img {
         height: 400px;
@@ -33,6 +33,9 @@
     .slider-text {
         background: #87ceebc7;
         border-radius: 10px
+    }
+    .t_product_card{
+        width: 250px
     }
 </style>
 {{-- <script>
