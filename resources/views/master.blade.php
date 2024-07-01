@@ -37,6 +37,9 @@
     .t_product_card{
         width: 250px
     }
+    .detail-img{
+        height: 200px
+    }
 </style>
 {{-- <script>
     $(document).ready(function() {

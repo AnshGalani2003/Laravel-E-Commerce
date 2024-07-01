@@ -19,11 +19,13 @@
             <div class="carousel-inner">
                 @foreach ($products as $item)
                     <div class="carousel-item {{ $item['id'] == 1 ? 'active' : '' }}">
-                        <img src="{{ $item['gallery'] }}" class="d-block w-100 slider-img" alt="...">
-                        <div class="carousel-caption d-none d-md-block slider-text">
-                            <h5>{{ $item['name'] }}</h5>
-                            <p>{{ $item['description'] }}</p>
-                        </div>
+                        <a href="detail/{{ $item['id'] }}">
+                            <img src="{{ $item['gallery'] }}" class="d-block w-100 slider-img" alt="...">
+                            <div class="carousel-caption d-none d-md-block slider-text">
+                                <h5>{{ $item['name'] }}</h5>
+                                <p>{{ $item['description'] }}</p>
+                            </div>
+                        </a>
                     </div>
                 @endforeach
             </div>
@@ -44,13 +46,15 @@
             @foreach ($products as $item)
                 <div class="col">
                     <div class="card t_product_card">
-                        <img src="{{ $item['gallery'] }}" class="card-img-top" alt="" />
-                        <div class="card-body">
-                            <h5 class="card-title">{{ $item['name'] }}</h5>
-                            <p class="card-text">
-                                {{ $item['description'] }}
-                            </p>
-                        </div>
+                        <a href="/detail/{{ $item['id'] }}">
+                            <img src="{{ $item['gallery'] }}" class="card-img-top" alt="" />
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $item['name'] }}</h5>
+                                <p class="card-text">
+                                    {{ $item['description'] }}
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             @endforeach
