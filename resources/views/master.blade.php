@@ -40,6 +40,9 @@
     .detail-img{
         height: 200px
     }
+    .search-box{
+        width: 600px;
+    }
 </style>
 {{-- <script>
     $(document).ready(function() {

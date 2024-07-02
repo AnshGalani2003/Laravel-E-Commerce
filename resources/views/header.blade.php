@@ -14,6 +14,11 @@
                     <a class="nav-link active" aria-current="page" href="#">Orders</a>
                 </li>
             </ul>
+            <form action="/search" class="form-inline search-form d-flex gap-4">
+                <input class="form-control mr-sm-2 search-box" type="search" name="search-query" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
             <div class="d-flex">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item list-none">
