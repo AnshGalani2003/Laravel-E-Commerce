@@ -15,10 +15,10 @@ if (Session::has('user')) {
             <a class="navbar-brand" href="#">E Comm</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Orders</a>
+                    <a class="nav-link active" aria-current="page" href="/myorder">Orders</a>
                 </li>
             </ul>
             <form action="/search" class="form-inline search-form d-flex gap-4">
