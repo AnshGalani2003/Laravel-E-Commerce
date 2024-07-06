@@ -23,7 +23,7 @@
                             <td><img src="{{ $item->gallery }}" alt="{{ $item->name }}" width="50" /></td>
                             <td><a href="/detail/{{ $item->id }}">{{ $item->name }}</a></td>
                             <td>{{ $item->price }}</td>
-                            <td><a href="#" class="btn btn-warning">Remove From Cart</a></td>
+                            <td><a href="/removecart/{{ $item->cart_id }}" class="btn btn-warning">Remove From Cart</a></td>
                         </tr>
                         @php
                             $i++;
