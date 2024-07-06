@@ -2,6 +2,7 @@
 @section('content')
     <div class="container mb-4 mt-4">
         <h1 class="mb-3">Cart List</h1>
+        <a href="/order" class="btn btn-success mb-4">Order Now</a>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <table class="table table-hover">
                 <thead>
